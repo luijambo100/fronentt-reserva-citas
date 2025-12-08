@@ -396,3 +396,148 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+/*SECCION DE PEDIATRIA*/
+
+.pediatria-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+}
+
+.pediatria-imagen-box {
+  order: 2;
+  width: 450px;
+  height: 430px;
+  border-radius: 50%;
+  padding: 5px;
+  background: conic-gradient(#0057b8, #616ba3, #e0444c, #0057b8);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pediatria-imagen {
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+  display: block;
+  order: 2;
+  text-align: center;
+  border-image: conic-gradient(#0057b8, #8d1d1d, #c7141d, #0057b8) 1;
+}
+
+/*formulario*/
+
+.form-box {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 480px;
+}
+
+.form-row {
+  display: flex;
+  gap: 45px;
+}
+
+.form-input,
+.form-row input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #0057b8;
+  font-size: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 35px;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  background: #0057b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-buttons button:hover {
+  background: #003f82;
+}
+
+
+
+/* CONTENEDOR DEL CALENDARIO */
+.calendar-box {
+  background: #113cb4f6;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  width: 320px;
+}
+
+/* Ajuste del calendario de react-datepicker */
+.react-datepicker {
+  border: none;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Días de la semana */
+.react-datepicker__day-name {
+  color: #1455c7;
+  font-weight: bold;
+  margin: 0.4rem;
+}
+
+/* Días del mes */
+.react-datepicker__day {
+  margin: 0.4rem;
+  font-size: 0.9rem;
+  border-radius: 8px !important;
+}
+
+/* Hover en días */
+.react-datepicker__day:hover {
+  background-color: #d6e6ff;
+  color: #a80000;
+}
+
+/* Día seleccionado */
+.react-datepicker__day--selected {
+  background-color: #c7141d !important;
+  color: rgb(105, 8, 8);
+  border-radius: 8px;
+}
+
+/* Día actual */
+.react-datepicker__day--today {
+  font-weight: bold;
+  color: #1455c7;
+  border: 1px solid #1455c7;
+}
+
+/* Botones de navegación */
+.react-datepicker__navigation {
+  top: 15px;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #1455c7;
+}
+
+/* Hover botones navegación */
+.react-datepicker__navigation:hover .react-datepicker__navigation-icon::before {
+  border-color: #a80000;
+}
