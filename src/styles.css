@@ -1,3 +1,8 @@
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,11 +35,23 @@ body {
 /*SECCIÓN DE LOGIN  */
 .login-container {
   display: grid;
+  
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
   background: linear-gradient(135deg, #dcdfee 0%, #16139b 50%, #f093fb 100%);
   position: relative;
   overflow: hidden;
+}
+.login-container,
+.right-panel input,
+.right-panel button {
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: 400;
+}
+
+.right-panel h2 {
+  font-weight: 800; /* títulos fuertes */
 }
 
 /* Efecto de círculos decorativos */
@@ -328,6 +345,19 @@ body {
   color: var(--primary-color);
   transform: translateY(-2px);
 }
+.navbar,
+.nav-links,
+.clinic-name {
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: 600;
+}
+button {
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
 
 /* PERFIL*/
 .profile {
@@ -421,6 +451,14 @@ body {
   justify-content: center;
   align-items: center;
 
+}
+.home-welcome h1 {
+  font-family: "RobotoCondensed", sans-serif;
+  font-weight: 800;
+}
+
+.welcome-desc {
+  font-weight: 400;
 }
 
 /* ONDA SUPERIOR */
@@ -1302,6 +1340,8 @@ select {
     font-size: 2rem;
   }
 }
+
+
 
 @media (max-width: 480px) {
   .right-panel form {
